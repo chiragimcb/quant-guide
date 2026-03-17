@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Ensure the app takes up the full dynamic height of the iPad screen */
+html,
+body,
+#root {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* Prevents the iPad 'bounce' scroll effect */
+  background-color: #f8fafc;
+}
+
+/* Ensure tldraw takes up its full container */
+.tldraw-container {
+  position: absolute;
+  inset: 0;
+}
