@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# 👻 Quant-Guide: Socratic iPad Tutor
+**Project Status:** Milestone 1 Verified ✅ | Phase 2 In Progress 🚧
+**Primary User:** iPad Pro + Apple Pencil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🏛️ System Architecture
+- **Framework:** React 19 + Vite 6 (SPA)
+- **Styling:** Tailwind CSS v4
+- **Canvas engine:** Excalidraw (Pivoted for Vite 6 compatibility)
+- **AI Brain:** Gemini 1.5 Flash (Multimodal)
+- **Data Source:** 2IIM CAT Question Bank (Arithmetic/TSD)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚩 Milestone 1: The Stable Infrastructure
+- [x] Established Vite 6 + React 19 boilerplate.
+- [x] Integrated Excalidraw with fixed iPad scrolling/interactivity.
+- [x] Implemented SSH-based Git workflow with branch protection.
+- [x] Structured `src/questions.ts` with 2IIM Time-Speed-Distance content.
 
-## Expanding the ESLint configuration
+## 🚧 Current Phase: The Ghost Vision (Phase 2)
+**Goal:** Enable the AI to "see" and "critique" Apple Pencil sketches.
+- [ ] Secure API key management via `.env`.
+- [ ] Base64 Image Processing pipeline.
+- [ ] Socratic Prompt Engineering.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📝 Developer Notes
+- **Git Protocol:** Always use SSH (`git@github.com:chiragimcb/quant-guide.git`) to avoid account credential clashes on this machine.
+- **iPad Testing:** Use `npm run dev -- --host` and access via local IP on Safari.
