@@ -10,6 +10,7 @@ import { Excalidraw, exportToBlob } from "@excalidraw/excalidraw";
 import { TSD_QUESTIONS } from "./questions";
 import { getGhostInsight } from "./lib/gemini";
 import { blobToBase64 } from "./utils/imageHelpers";
+import { GhostResponse } from "./components/GhostResponse";
 import "@excalidraw/excalidraw/index.css";
 
 function App() {
@@ -77,11 +78,7 @@ function App() {
           </h1>
 
           {/* DISPLAY GHOST MESSAGE HERE */}
-          {ghostMessage && (
-            <div className={`p-4 rounded-xl mb-6 text-sm border ${isThinking ? 'bg-slate-50 text-slate-400' : 'bg-indigo-50 text-indigo-900 border-indigo-100 italic'}`}>
-              <strong>The Ghost says:</strong> {ghostMessage}
-            </div>
-          )}
+          <GhostResponse message={ghostMessage} isThinking={isThinking} />
 
           <button
             onClick={handleConsultGhost} // LINKED FUNCTION

@@ -17,7 +17,7 @@ export const getGhostInsight = async (
 ) => {
     // 2. Use the Flash model for speed and visual reasoning
     const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: "gemini-3-flash-preview",
         // This is the "Ghost's Soul" - The System Instruction
         systemInstruction: `You are the "Socratic Ghost," a CAT-level Quant tutor.
     Your goal is to help students solve Time Speed Distance problems.
