@@ -48,7 +48,7 @@ function App() {
       const insight = await getGhostInsight(
         currentQuestion.text,
         base64,
-        currentQuestion.solutionLogic
+        currentQuestion.solutionLogic,
       );
 
       setGhostMessage(insight);
@@ -94,7 +94,7 @@ function App() {
           <button
             disabled={currentIndex === 0}
             onClick={() => {
-              setCurrentIndex(prev => prev - 1);
+              setCurrentIndex((prev) => prev - 1);
               setGhostMessage(""); // Clear ghost when changing questions
             }}
             className="flex-1 py-3 px-4 rounded-xl border border-slate-200 text-slate-600 font-medium hover:bg-slate-50 disabled:opacity-30"
@@ -104,7 +104,7 @@ function App() {
           <button
             disabled={currentIndex === TSD_QUESTIONS.length - 1}
             onClick={() => {
-              setCurrentIndex(prev => prev + 1);
+              setCurrentIndex((prev) => prev + 1);
               setGhostMessage(""); // Clear ghost when changing questions
             }}
             className="flex-1 py-3 px-4 rounded-xl bg-slate-900 text-white font-medium hover:bg-slate-800 disabled:opacity-30"

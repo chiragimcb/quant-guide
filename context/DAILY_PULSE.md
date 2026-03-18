@@ -5,7 +5,7 @@ Phase 1: Getting the "iPad Scratchpad" live and responsive.
 
 ## Today's Objective
 - Set up a new project in `quant-guide`.
-- Ensure the `tldraw` canvas works flawlessly with Apple Pencil on iPad Safari.
+- Ensure the `Excalidraw` canvas works flawlessly with Apple Pencil on iPad Safari.
 - Verify that we can "Capture" the canvas as an image for future AI analysis.
 
 ## Blockers

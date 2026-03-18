@@ -2,7 +2,7 @@
 
 ## Phase 1: The Foundation (Current)
 - [ ] Initialize React + Vite + Tailwind project.
-- [ ] Implement `tldraw` canvas with Apple Pencil optimization.
+- [x] Implement `Excalidraw` canvas with Apple Pencil optimization.
 - [ ] Create a "Split-Pane" UI (Question vs. Scratchpad).
 - [ ] Build the "Snapshot" capture logic (Canvas to Base64).
 

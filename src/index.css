@@ -12,8 +12,3 @@ body,
   background-color: #f8fafc;
 }
 
-/* Ensure tldraw takes up its full container */
-.tldraw-container {
-  position: absolute;
-  inset: 0;
-}
