@@ -17,3 +17,9 @@ A "Socratic Ghost" tutor that lives inside an iPad scratchpad. It watches a stud
 - **Performance:** Ghost response time must be < 3 seconds on a stable Wi-Fi connection.
 - **Accuracy:** The Ghost must correctly identify the formula $d = s \times t$ from a hand-drawn sketch 80% of the time.
 - **Pedagogy:** The Ghost must successfully refuse to give a numerical answer 100% of the time.
+
+
+## 🧠 Socratic Logic v1.1
+- **Focus:** Moving from general "Hints" to "TSD-Specific Pedagogy."
+- **Logic Shift:** The Ghost now prioritizes **Ratio-based solving** (a key CAT shortcut) over standard algebraic solving.
+- **Tone:** Mystical but mathematically rigorous.
